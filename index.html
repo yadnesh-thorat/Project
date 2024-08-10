@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <style>
+        /* Basic reset and styling */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #030303;
+        }
+
+        /* Container for the flex cards */
+        .card-container {
+            display: flex;
+            justify-content: space-around; /* Distribute space between cards */
+            flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
+            padding: 40px;
+            gap: 20px; /* Space between cards */
+        }
+
+        /* Individual card styling */
+        .card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 50px;
+            overflow: hidden; /* Ensure content does not overflow the card */
+            width: calc(33.333% - 20px); /* Adjust width for responsiveness */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        /* Hover effect on the card */
+.card:hover {
+    transform: translateY(-10px); /* Lift the card on hover */
+    box-shadow: 0 8px 16px rgba(231, 7, 7, 0.2); /* Add a deeper shadow */
+}
+
+        /* Image styling */
+        .card img {
+            width: 100%; /* Make image fill its container */
+            height: auto; /* Maintain aspect ratio */
+            display: block; /* Remove extra space below the image */
+        }
+
+        /* Container for the buttons */
+        .card-buttons {
+            display: flex;
+            justify-content: center; /* Center the buttons */
+            gap: 0; /* Remove space between buttons */
+            padding: 10px;
+        }
+
+        /* Button styling */
+        .btn {
+            background-color: #eb220b;
+            color: #fff;
+            text-decoration: none;
+            padding: 15px 15px;
+            border-radius: 15px;
+            transition: background-color 0.3s ease;
+            margin-left: 10px;
+        }
+
+        .btn:hover {
+            background-color: #aeeb08; /* Darker background on hover */
+        }
+
+        .button-container {
+            display: flex;
+            gap: 20px;
+            margin-left:80px;
+        }
+
+        .btn-secondary {
+            background-color: #d3f10f;
+            margin-left: 180px;
+            padding: 20px 40px;
+            font-size: 20px;
+            cursor: pointer;
+            border: none;
+            border-radius: 10px;
+            color: rgb(5, 5, 5);
+        }
+
+        .btn-secondary:hover {
+            background-color: #eb0b0b;
+        }
+    </style>
+</head>
+<body>
+    <div class="card-container">
+        <div class="card">
+            <img src="https://sneakzz.github.io/FreeCodeCamp/Responsive%20Web%20Design%20Projects/Tribute%20page/images/Einstein.jpg" alt="hello">
+            <div class="card-buttons">
+                <a href="https://yadnesh-thorat.github.io/OIBSIP-Tribute-Page/" target="_blank" class="btn">Try This</a>
+                <a href="https://github.com/yadnesh-thorat/OIBSIP-Tribute-Page" target="_blank" class="btn">View Source Code</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://tse2.mm.bing.net/th?id=OIP.feShCnnC9HJnJwVRL-jjOAHaHa&pid=Api&P=0&h=220" alt="Description of image 2">
+            <div class="card-buttons">
+                <a href="https://yadnesh-thorat.github.io/OIBSIP-Calculator/" target="_blank" class="btn">Try This</a>
+                <a href="https://github.com/yadnesh-thorat/OIBSIP-Calculator" target="_blank" class="btn">View Source Code</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://www.creativefabrica.com/wp-content/uploads/2023/06/13/Travel-and-tourism-landing-page-template-Graphics-71987647-1.jpg" alt="Description of image 3">
+            <div class="card-buttons">
+                <a href="https://yadnesh-thorat.github.io/Landing-Page-Travel--Codsoft-Task-2-/" target="_blank" class="btn">Try This</a>
+                <a href="https://github.com/yadnesh-thorat/Landing-Page-Travel--Codsoft-Task-2-" target="_blank" class="btn">View Source Code</a>
+            </div>
+        </div>
+    </div>
+    <div class="button-container">
+        
+        <a href="https://yadnesh-thorat.github.io/Contact/" target="_blank" class="btn"> Next>></a>
+        
+    </div>
+    
+</body>
+</html>
